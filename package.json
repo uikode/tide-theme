@@ -1,0 +1,40 @@
+{
+  "name": "@uikode/tide-theme",
+  "version": "0.1.0",
+  "description": "Framework-agnostic theme token system with CSS variable application, light/dark mode, and persistence. Zero dependencies.",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "test": "vitest run",
+    "dev": "vitest"
+  },
+  "devDependencies": {
+    "typescript": "^5.5.0",
+    "vite": "^6.0.0",
+    "vitest": "^3.0.0"
+  },
+  "keywords": [
+    "theme",
+    "css-variables",
+    "dark-mode",
+    "design-tokens",
+    "tide"
+  ],
+  "author": "Andy Vandaric <andy@uikode.com>",
+  "license": "MIT",
+  "homepage": "https://uikode.com/tide-theme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uikode/tide.git",
+    "directory": "packages/tide-theme"
+  }
+}
